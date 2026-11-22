@@ -1,0 +1,185 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--o:#ee6c00;--d:#1d1d1d;--l:#f4f4f4}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#888;font-family:Inter,sans-serif}
+.cover{width:1200px;height:750px;position:relative;overflow:hidden;margin-bottom:20px;color:#fff;background:var(--d)}
+.mono{font-family:'JetBrains Mono',monospace}
+.glow{position:absolute;border-radius:50%;filter:blur(90px)}
+.tag{display:inline-block;font:600 22px 'JetBrains Mono',monospace;border:2px solid currentColor;padding:6px 14px;letter-spacing:.06em;text-transform:uppercase}
+.big{font-weight:800;letter-spacing:-.05em;line-height:.9}
+
+/* 1 VIBE */
+#vibe{background:linear-gradient(135deg,#1d1d1d,#2b1a10)}
+#vibe .phone{position:absolute;left:110px;top:60px;width:330px;height:630px;border-radius:44px;border:6px solid #444;background:#111;overflow:hidden}
+#vibe .feed{position:absolute;inset:0;background:linear-gradient(180deg,#5b3a8c,#c9456b 60%,#ee6c00)}
+#vibe .sheet{position:absolute;left:0;right:0;bottom:0;background:#fff;color:#111;border-radius:30px 30px 0 0;padding:28px 26px 34px}
+#vibe .sheet h4{font-size:26px;letter-spacing:-.02em;margin-bottom:8px}
+#vibe .sheet p{font-size:17px;color:#555;line-height:1.4}
+#vibe .btns{display:flex;gap:10px;margin-top:20px}
+#vibe .btns b{flex:1;text-align:center;padding:13px;font-size:16px;border:2px solid #111}
+#vibe .btns b:first-child{background:var(--o);border-color:var(--o);color:#fff}
+#vibe .sig{position:absolute;left:520px;top:90px;width:600px}
+#vibe .sig h3{font-size:58px;margin-bottom:34px}
+#vibe .row{margin-bottom:26px}
+#vibe .row div:first-child{display:flex;justify-content:space-between;font:600 21px 'JetBrains Mono';margin-bottom:10px;color:#ddd}
+#vibe .bar{height:14px;background:#3a3a3a}
+#vibe .bar i{display:block;height:100%;background:var(--o)}
+#vibe .nudge{margin-top:34px;display:flex;align-items:center;gap:16px;font:600 22px 'JetBrains Mono';color:var(--o)}
+#vibe .nudge:before{content:'';width:16px;height:16px;border-radius:50%;background:var(--o)}
+
+/* 2 GullyVerse */
+#gully{background:linear-gradient(135deg,#2a1708,#1d1d1d 60%)}
+#gully h2{position:absolute;left:70px;top:60px;font-size:130px}
+#gully h2 span{color:var(--o)}
+#gully .sub{position:absolute;left:76px;top:200px;font:500 28px Inter;color:#ccc}
+#gully .tiles{position:absolute;left:70px;right:70px;bottom:70px;display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+#gully .t{height:330px;background:#262626;border:2px solid #444;padding:26px;position:relative}
+#gully .t h4{font-size:30px;letter-spacing:-.02em;margin-bottom:6px}
+#gully .t p{font:500 18px 'JetBrains Mono';color:#aaa}
+#gully .chits{position:absolute;left:26px;bottom:26px;display:flex;gap:12px}
+#gully .chit{width:78px;height:104px;background:#f4f4f4;color:#111;display:flex;align-items:center;justify-content:center;font:800 24px Inter;transform:rotate(-4deg)}
+#gully .chit:nth-child(2){transform:rotate(3deg);background:var(--o);color:#fff}
+#gully .chit:nth-child(3){transform:rotate(-2deg)}
+#gully .note{position:absolute;left:26px;bottom:26px;font:800 90px Inter;color:var(--o);letter-spacing:-.05em}
+#gully .stack{position:absolute;left:30px;bottom:26px;display:flex;flex-direction:column-reverse;align-items:flex-start;gap:4px}
+#gully .stack i{display:block;height:20px;background:var(--o);border:2px solid #7a3600}
+#gully .ball{position:absolute;right:40px;bottom:36px;width:64px;height:64px;border-radius:50%;background:#c8e53a;border:3px solid #7d9200}
+#gully .stackwrap{position:absolute;left:0;right:0;bottom:0;top:0}
+
+/* 3 Resume */
+#resume{background:linear-gradient(135deg,#1d1d1d,#1a2430)}
+#resume h2{position:absolute;left:70px;top:60px;font-size:84px;width:520px}
+#resume .modes{position:absolute;left:70px;top:350px;display:flex;flex-direction:column;gap:14px;width:420px}
+#resume .modes b{font:700 26px 'JetBrains Mono';padding:18px 22px;border:2px solid #555;color:#999;display:flex;justify-content:space-between}
+#resume .modes b.on{background:var(--o);border-color:var(--o);color:#fff}
+#resume .modes span{font-weight:400;font-size:18px}
+#resume .list{position:absolute;left:600px;top:70px;width:540px}
+#resume .list h4{font:600 20px 'JetBrains Mono';color:#aaa;margin-bottom:18px;letter-spacing:.08em}
+#resume .c{display:flex;align-items:center;gap:20px;background:#262626;border:2px solid #3a3a3a;padding:20px 24px;margin-bottom:14px}
+#resume .c .n{font:800 34px Inter;width:50px;color:var(--o)}
+#resume .c .f{flex:1}
+#resume .c .f u{display:block;text-decoration:none;font:600 22px Inter;margin-bottom:10px}
+#resume .c .bar{height:10px;background:#3a3a3a}
+#resume .c .bar i{display:block;height:100%;background:var(--o)}
+#resume .c .s{font:700 28px 'JetBrains Mono'}
+#resume .why{margin-top:22px;font:400 19px 'JetBrains Mono';color:#9fb4c8;border-left:4px solid var(--o);padding-left:16px;line-height:1.5}
+
+/* 4 PhishFry */
+#phish{background:linear-gradient(135deg,#1d1d1d,#112027)}
+#phish .acc{position:absolute;left:70px;top:50px}
+#phish .acc b{display:block;font-size:150px}
+#phish .acc b em{font-style:normal;color:var(--o)}
+#phish .acc span{font:600 26px 'JetBrains Mono';color:#9ab}
+#phish .urls{position:absolute;right:60px;top:60px;width:520px;display:flex;flex-direction:column;gap:20px}
+#phish .u{background:#262626;border:2px solid #3a3a3a;padding:20px 24px}
+#phish .u code{display:block;font:500 24px 'JetBrains Mono';margin-bottom:12px;word-break:break-all}
+#phish .v{display:inline-block;font:700 20px 'JetBrains Mono';padding:6px 14px}
+#phish .bad .v{background:#d6342c}
+#phish .bad{border-color:#d6342c}
+#phish .ok .v{background:#1f9d55}
+#phish .ok{border-color:#1f9d55}
+#phish .flow{position:absolute;left:70px;right:70px;bottom:60px;display:flex;align-items:center;gap:20px;font:700 24px 'JetBrains Mono'}
+#phish .flow i{font-style:normal;padding:16px 22px;border:2px solid #555;background:#1d1d1d}
+#phish .flow i.e{background:var(--o);border-color:var(--o)}
+#phish .flow s{text-decoration:none;color:#777}
+
+/* 5 Gesture */
+#gesture{background:radial-gradient(circle at 30% 50%,#2a2a2a,#161616)}
+#gesture svg{position:absolute;left:40px;top:50px}
+#gesture .keys{position:absolute;right:70px;top:90px;width:540px}
+#gesture h2{font-size:72px;margin-bottom:36px}
+#gesture .k{display:flex;align-items:center;gap:22px;margin-bottom:22px;background:#262626;border:2px solid #3a3a3a;padding:20px 24px}
+#gesture .cap{width:84px;height:84px;display:flex;align-items:center;justify-content:center;font:800 40px Inter;background:#f4f4f4;color:#111;border-bottom:8px solid #aaa}
+#gesture .k.g .cap{background:var(--o);color:#fff;border-bottom-color:#8f4100}
+#gesture .k p{font:600 26px 'JetBrains Mono'}
+#gesture .k small{display:block;font:400 18px 'JetBrains Mono';color:#999;margin-top:6px}
+#gesture .stack{font:500 20px 'JetBrains Mono';color:#9a9a9a;margin-top:30px}
+
+/* 6 Culinary */
+#culinary{background:linear-gradient(135deg,#251509,#1d1d1d)}
+#culinary .ph{position:absolute;top:60px;width:250px;height:400px;object-fit:cover;border:6px solid #f4f4f4;box-shadow:0 20px 40px rgba(0,0,0,.5)}
+#culinary .p1{left:60px;transform:rotate(-4deg)}
+#culinary .p2{left:200px;top:110px;transform:rotate(3deg);z-index:2}
+#culinary .p3{left:340px;transform:rotate(-2deg);top:70px}
+#culinary .lab{position:absolute;left:60px;bottom:50px;font:700 28px 'JetBrains Mono';color:var(--o)}
+#culinary .rt{position:absolute;right:60px;top:80px;width:430px}
+#culinary h2{font-size:84px;margin-bottom:30px}
+#culinary .f{background:#262626;border:2px solid #3a3a3a;padding:20px 22px;margin-bottom:16px}
+#culinary .f b{display:block;font:700 22px 'JetBrains Mono';color:var(--o);margin-bottom:8px}
+#culinary .f span{font:400 21px Inter;color:#ddd}
+</style></head><body>
+
+<div class="cover" id="vibe">
+  <div class="glow" style="width:500px;height:500px;background:#ee6c00;opacity:.25;right:-100px;bottom:-150px"></div>
+  <div class="phone"><div class="feed"></div>
+    <div class="sheet"><h4>Take a mindful break</h4><p>You've been scrolling for 18 minutes. Want to switch to something that adds value?</p>
+      <div class="btns"><b>Show me better</b><b>Later</b></div></div></div>
+  <div class="sig"><h3 class="big">Behavior-aware.<br><span style="color:#ee6c00">Not addictive.</span></h3>
+    <div class="row"><div><span>SESSION DURATION</span><span>HIGH</span></div><div class="bar"><i style="width:82%"></i></div></div>
+    <div class="row"><div><span>SCROLL VELOCITY</span><span>RISING</span></div><div class="bar"><i style="width:68%"></i></div></div>
+    <div class="row"><div><span>ENGAGEMENT FREQUENCY</span><span>LOOPING</span></div><div class="bar"><i style="width:91%"></i></div></div>
+    <div class="nudge">NUDGE TRIGGERED → FEED MODERATED</div></div>
+</div>
+
+<div class="cover" id="gully">
+  <div class="glow" style="width:520px;height:520px;background:#ee6c00;opacity:.28;right:-120px;top:-180px"></div>
+  <h2 class="big">Gully<span>Verse</span></h2>
+  <div class="sub">Old-school games. New-age connections.</div>
+  <div class="tiles">
+    <div class="t"><h4>Raja Mantri Chor Sipahi</h4><p>SECRET ROLES · 4 PLAYERS</p><div class="chits"><div class="chit">1000</div><div class="chit">800</div><div class="chit">500</div></div></div>
+    <div class="t"><h4>Antakshari</h4><p>SONG CHAINS · 2–12 PLAYERS</p><div class="note">♪ ♫</div></div>
+    <div class="t"><h4>Seven Stones</h4><p>LAGORI · REAL-TIME CANVAS</p>
+      <div class="stack"><i style="width:150px"></i><i style="width:136px"></i><i style="width:122px"></i><i style="width:108px"></i><i style="width:94px"></i><i style="width:80px"></i><i style="width:66px"></i></div><div class="ball"></div></div>
+  </div>
+</div>
+
+<div class="cover" id="resume">
+  <div class="glow" style="width:480px;height:480px;background:#3b82c4;opacity:.22;right:-100px;bottom:-160px"></div>
+  <h2 class="big">Resume<br><span style="color:#ee6c00">Screening</span> Agent</h2>
+  <div class="modes"><b>FAST <span>TF-IDF + rules</span></b><b class="on">DEEP <span>RAG + LLM</span></b><b>HYBRID <span>blended</span></b></div>
+  <div class="list"><h4>RANKED SHORTLIST · JOB DESCRIPTION MATCH</h4>
+    <div class="c"><span class="n">01</span><div class="f"><u>Résumé A</u><div class="bar"><i style="width:92%"></i></div></div><span class="s">92</span></div>
+    <div class="c"><span class="n">02</span><div class="f"><u>Résumé B</u><div class="bar"><i style="width:81%"></i></div></div><span class="s">81</span></div>
+    <div class="c"><span class="n">03</span><div class="f"><u>Résumé C</u><div class="bar"><i style="width:67%"></i></div></div><span class="s">67</span></div>
+    <div class="c"><span class="n">04</span><div class="f"><u>Résumé D</u><div class="bar"><i style="width:48%"></i></div></div><span class="s">48</span></div>
+    <div class="why">LLM reasoning explains every score.</div></div>
+</div>
+
+<div class="cover" id="phish">
+  <div class="glow" style="width:520px;height:520px;background:#2a7f9e;opacity:.22;left:-160px;bottom:-200px"></div>
+  <div class="acc"><b class="big">99.<em>75</em>%</b><span>ACCURACY · CNN + LSTM ENSEMBLE</span></div>
+  <div class="urls">
+    <div class="u bad"><code>paypa1-secure-login.xyz/verify</code><span class="v">PHISHING</span></div>
+    <div class="u ok"><code>github.com/SmallwonderRania</code><span class="v">LEGITIMATE</span></div>
+    <div class="u bad"><code>bank-update.top/confirm?id=88</code><span class="v">PHISHING</span></div>
+  </div>
+  <div class="flow"><i>URL</i><s>→</s><i>CNN</i><s>+</s><i>LSTM</i><s>→</s><i class="e">ENSEMBLE</i><s>→</s><i>VERDICT</i></div>
+</div>
+
+<div class="cover" id="gesture">
+  <svg width="560" height="640" viewBox="70 85 250 270" id="hand"></svg>
+  <div class="keys"><h2 class="big">Hands <span style="color:#ee6c00">as</span><br>controller</h2>
+    <div class="k g"><div class="cap">→</div><p>OPEN PALM → GAS<small>Right hand</small></p></div>
+    <div class="k"><div class="cap">←</div><p>CLOSED FIST → BRAKE<small>Left hand</small></p></div>
+    <div class="stack">PYTHON · OPENCV · MEDIAPIPE · 21 LANDMARKS / HAND</div></div>
+</div>
+
+<div class="cover" id="culinary">
+  <img class="ph p1" src="img/pizza.jpeg"><img class="ph p2" src="img/burger.jpeg"><img class="ph p3" src="img/dhokla.jpeg">
+  <div class="lab">PIC2PLATE → DISH + RECIPE</div>
+  <div class="rt"><h2 class="big">Culinary<br><span style="color:#ee6c00">Compass</span></h2>
+    <div class="f"><b>DISHDISCOVER</b><span>Leftover ingredients in, matching recipes out.</span></div>
+    <div class="f"><b>PIC2PLATE</b><span>Upload a food photo, identify the dish, get its recipe.</span></div></div>
+</div>
+
+<script>
+const P=[[200,330],[165,300],[135,265],[115,230],[100,200],[170,235],[165,185],[162,150],[160,120],[200,230],[202,175],[203,135],[204,100],[230,238],[240,190],[246,155],[250,125],[255,255],[272,220],[284,195],[294,172]];
+const E=[[0,1],[1,2],[2,3],[3,4],[0,5],[5,6],[6,7],[7,8],[9,10],[10,11],[11,12],[13,14],[14,15],[15,16],[17,18],[18,19],[19,20],[0,17],[5,9],[9,13],[13,17]];
+let s='';E.forEach(([a,b])=>s+=`<line x1="${P[a][0]}" y1="${P[a][1]}" x2="${P[b][0]}" y2="${P[b][1]}" stroke="#f4f4f4" stroke-width="2.5" stroke-linecap="round"/>`);
+P.forEach(([x,y],i)=>s+=`<circle cx="${x}" cy="${y}" r="${[4,8,12,16,20].includes(i)?5.5:4.5}" fill="${[4,8,12,16,20].includes(i)?'#ee6c00':'#fff'}"/>`);
+document.getElementById('hand').innerHTML=s;
+</script>
+</body></html>

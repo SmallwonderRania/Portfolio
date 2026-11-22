@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+<rect width="600" height="600" fill="#f4f4f2"/>
+<rect x="0" y="0" width="600" height="6" fill="#ee6c00"/>
+<image x="170" y="120" width="260" height="260" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij48cGF0aCBmaWxsPSIjRUU0QzJDIiBkPSJNMTAwLjEgMzguM2wtOS4yIDkuMmMxNS4xIDE1LjEgMTUuMSAzOS40IDAgNTQuMy0xNS4xIDE1LjEtMzkuNCAxNS4xLTU0LjMgMC0xNS4xLTE1LjEtMTUuMS0zOS40IDAtNTQuM2wyNC0yNCAzLjQtMy40VjJMMjcuOCAzOC4yQzcuNyA1OC4zIDcuNyA5MC44IDI3LjggMTExczUyLjYgMjAuMSA3Mi40IDBjMjAuMS0yMC4yIDIwLjEtNTIuNS0uMS03Mi43eiIvPjxjaXJjbGUgZmlsbD0iI0VFNEMyQyIgdHJhbnNmb3JtPSJyb3RhdGUoLTg4LjkzOSA4Mi4wNjkgMjkuMzk4KSBzY2FsZSguOTk5OTcpIiBjeD0iODIuMSIgY3k9IjI5LjQiIHI9IjYuNyIvPjwvc3ZnPgo="/>
+<text x="300" y="490" text-anchor="middle" font-family="Consolas, 'Courier New', monospace" font-size="38" font-weight="700" fill="#1d1d1d" letter-spacing="1">PyTorch</text>
+</svg>
