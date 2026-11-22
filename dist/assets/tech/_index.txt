@@ -1,0 +1,24 @@
+python|Python
+tensorflow|TensorFlow
+pytorch|PyTorch
+keras|Keras
+scikit-learn|scikit-learn
+opencv|OpenCV
+numpy|NumPy
+pandas|Pandas
+jupyter|Jupyter
+matplotlib|Matplotlib
+react|React
+typescript|TypeScript
+javascript|JavaScript
+nodejs|Node.js
+express|Express
+flask|Flask
+socketio|Socket.IO
+tailwindcss|Tailwind CSS
+vite|Vite
+html5|HTML5
+css3|CSS3
+mysql|SQL
+git|Git
+github|GitHub

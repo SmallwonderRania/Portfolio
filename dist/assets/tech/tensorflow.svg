@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+<rect width="600" height="600" fill="#f4f4f2"/>
+<rect x="0" y="0" width="600" height="6" fill="#ee6c00"/>
+<image x="170" y="120" width="260" height="260" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2aWV3Qm94PSIwIDAgMTI4IDEyOCI+CiAgPHBhdGggZD0ibTYxLjU1IDEyOC0yMS44NC0xMi42OFY0MC41NUw2LjgxIDU5LjU2bC4wOC0yOC4zMkw2MS41NSAwek02Ni40NiAwdjEyOGwyMS44NC0xMi42OFY3OS4zMWwxNi40OSA5LjUzLS4xLTI0LjYzLTE2LjM5LTkuMzZ2LTE0LjNsMzIuODkgMTkuMDEtLjA4LTI4LjMyeiIgZmlsbD0iI2ZmNmYwMCIgLz4KPC9zdmc+"/>
+<text x="300" y="490" text-anchor="middle" font-family="Consolas, 'Courier New', monospace" font-size="38" font-weight="700" fill="#1d1d1d" letter-spacing="1">TensorFlow</text>
+</svg>

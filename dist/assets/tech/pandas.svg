@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+<rect width="600" height="600" fill="#f4f4f2"/>
+<rect x="0" y="0" width="600" height="6" fill="#ee6c00"/>
+<image x="170" y="120" width="260" height="260" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij48cGF0aCBmaWxsPSIjMTMwNzU0IiBkPSJNNDYuMjM2IDcuNTY3aDEzLjk5djI5LjA0N2gtMTMuOTlabTAgNTkuNjY4aDEzLjk5Vjk2LjI4aC0xMy45OVoiLz48cGF0aCBmaWxsPSIjZmZjYTAwIiBkPSJNNDYuMjM2IDQ1LjA5MmgxMy45OXYxMy43MDVoLTEzLjk5WiIvPjxwYXRoIGZpbGw9IiMxMzA3NTQiIGQ9Ik0yMy43NjMgMzEuNDQ2aDEzLjk4OVYxMjhoLTEzLjk5Wk02OC4yNDUgOTEuMmgxMy45OXYyOS4wNDZoLTEzLjk5Wm0wLTU5LjcyaDEzLjk5djI5LjA0N2gtMTMuOTlaIi8+PHBhdGggZmlsbD0iI2U3MDQ4OCIgZD0iTTY4LjI0NSA2OS4wMTFoMTMuOTl2MTMuNzA1aC0xMy45OVoiLz48cGF0aCBmaWxsPSIjMTMwNzU0IiBkPSJNOTAuMjQ4IDBoMTMuOTl2OTYuNTU0aC0xMy45OVoiLz48L3N2Zz4K"/>
+<text x="300" y="490" text-anchor="middle" font-family="Consolas, 'Courier New', monospace" font-size="38" font-weight="700" fill="#1d1d1d" letter-spacing="1">Pandas</text>
+</svg>
